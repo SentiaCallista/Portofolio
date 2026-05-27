@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom right, #fff1f2, #f8d7da);
+            background: linear-gradient(to bottom right, #fff1f2, #f4c2c2);
             color: #4a2c2a;
         }
 
@@ -30,7 +31,7 @@
             height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            border: 5px solid #c75b6d;
+            border: 5px solid #b84c65;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
@@ -43,6 +44,21 @@
         .subtitle {
             font-size: 18px;
             color: #6d4c4c;
+            margin-bottom: 20px;
+        }
+
+        .linkedin-btn {
+            display: inline-block;
+            background: #a63d4d;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .linkedin-btn:hover {
+            background: #7f2d3b;
         }
 
         .card {
@@ -65,7 +81,7 @@
         }
 
         .skill-badge {
-            background: #f4b6c2;
+            background: #f7c6cf;
             color: #5a2a33;
             padding: 10px 18px;
             border-radius: 20px;
@@ -80,35 +96,23 @@
             margin-bottom: 15px;
         }
 
-        .testimonial {
-            margin-top: 20px;
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
         }
 
-        .testimonial img {
+        .testimonial-grid img {
             width: 100%;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .linkedin-btn {
-            display: inline-block;
-            margin-top: 15px;
-            background: #a63d4d;
-            color: white;
-            text-decoration: none;
-            padding: 12px 22px;
-            border-radius: 10px;
-            transition: 0.3s;
-        }
-
-        .linkedin-btn:hover {
-            background: #7f2d3b;
         }
 
         footer {
             text-align: center;
             padding: 30px;
             color: #6d4c4c;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -117,9 +121,11 @@
 
     <div class="container">
 
+        <!-- HERO SECTION -->
         <div class="hero">
-            <!-- GANTI FOTO DI SINI -->
-            <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+
+            <!-- FOTO PROFILE -->
+            <img src="Profile.jpeg" alt="Profile Photo" class="profile-img">
 
             <h1>Hi, I'm Sentia 👋</h1>
 
@@ -127,53 +133,69 @@
                 Administrative & Data Enthusiast | Detail-Oriented | Tech Learner
             </p>
 
-            <!-- GANTI LINKEDIN -->
+            <!-- GANTI LINK INI DENGAN LINK LINKEDIN KAMU -->
             <a href="https://linkedin.com/in/USERNAME" target="_blank" class="linkedin-btn">
                 Visit My LinkedIn
             </a>
+
         </div>
 
+        <!-- SKILLS -->
         <div class="card">
+
             <h2>Skills</h2>
 
             <div class="skills">
                 <div class="skill-badge">Microsoft Excel</div>
                 <div class="skill-badge">Data Entry</div>
+                <div class="skill-badge">Administration</div>
                 <div class="skill-badge">Communication</div>
                 <div class="skill-badge">Attention to Detail</div>
-                <div class="skill-badge">Administration</div>
                 <div class="skill-badge">Problem Solving</div>
             </div>
+
         </div>
 
+        <!-- PROJECTS -->
         <div class="card">
+
             <h2>Projects</h2>
 
             <div class="project-box">
                 <h3>Student Violation Point System</h3>
+
                 <p>
-                    Mobile-based application for monitoring student violations
-                    with multi-role access for school management.
+                    Mobile-based application for recording and monitoring
+                    student violations with multi-role access for school management.
                 </p>
             </div>
 
             <div class="project-box">
-                <h3>Portfolio Website</h3>
+                <h3>Personal Portfolio Website</h3>
+
                 <p>
-                    Personal portfolio website showcasing skills,
-                    projects, and professional background.
+                    Portfolio website to showcase skills, projects,
+                    and professional background.
                 </p>
             </div>
+
         </div>
 
+        <!-- TESTIMONIAL -->
         <div class="card">
+
             <h2>Testimonials</h2>
 
             <p>Recommendations & feedback from LinkedIn</p>
 
-            <div class="testimonial">
-                <!-- GANTI DENGAN SS TESTIMONI -->
-                <img src="testimonial1.jpg" alt="LinkedIn Testimonial">
+            <div class="testimonial-grid">
+
+                <img src="testi1.jpeg" alt="Testimonial 1">
+
+                <img src="testi2.jpeg" alt="Testimonial 2">
+
+                <img src="testi3.jpeg" alt="Testimonial 3">
+
             </div>
 
         </div>
@@ -185,4 +207,5 @@
     </footer>
 
 </body>
+
 </html>
